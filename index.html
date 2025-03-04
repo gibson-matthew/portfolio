@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Texas</title>
+
+    <link rel="stylesheet" href="landing-page.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="tx-header">
+            <!-- Logo and Title -->
+            <div class="head-item1">
+                <div class="head-left">
+                    <a href="index.html">
+                        <img src="pictures/texas-logo.png" class="head-logo" alt="Texas state outline with the Texas flag inlayed.">
+                    </a>
+                    <h1>Texas</h1>
+                </div>
+            </div>
+            <!-- Navigation Bar -->
+            <div class="head-item2">
+                <nav class="tx-nav">
+                    <ol class="nav-item">
+                        <li class="bttn">
+                            <a href="austin.html" class="no-decoration">Austin</a>
+                        </li>
+                        <li class="bttn">
+                            <a href="fortworth.html" class="no-decoration">Fort Worth</a>
+                        </li>
+                        <li class="bttn">
+                            <a href="dallas.html" class="no-decoration">Dallas</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main-item-left">
+                <img src="https://texascooppower.com/wp-content/uploads/2021/11/detail_bluebonnet-main.jpg" id="bluebonnet" alt="Texas Bluebonnet">
+                <p id="absolute">Bluebonnets are the offical Texas state flower!</p>
+                <p id="relative">Learn more <a href="https://gov.texas.gov/first-lady/post/the_bluebonnet_the_state_flower_of_texas" target="_blank">HERE.</a></p>
+            </div>
+            <form action="*" class="main-item-right">
+                <div class="form-item">
+                    <label for="fname">First name: </label><br>
+                    <input type="text" name="fname" id="fname" placeholder="First Name">
+                </div>
+                <div class="form-item">
+                    <label for="lname">Last name: </label><br>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div>
+                <div class="form-item">
+                    <label for="email">Email: </label><br>
+                    <input type="text" name="email" id="email" placeholder="Email" onchange="emailVerify()">
+                </div>
+                <div class="form-item">
+                    <label for="email">Confirm Email: </label><br>
+                    <input type="text" name="email2" id="email2" placeholder="Email2" onchange="emailVerify()">
+                </div>
+                <div class="form-item">
+                    <label for="message">Leave a message:</label><br>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                </div>
+                <button>
+                    Submit
+                </button>
+            </form>
+        </main>
+    </div>
+
+    <script>
+        function emailVerify() {
+            var e1 = document.getElementById('email').value;
+            var e2 = document.getElementById('email2').value;
+            var blank = '';
+
+            // Confirm the emails match
+            if (e1 == blank && e2 == blank) {
+                //
+            } else if (e1 == e2) {
+                //
+            } else {
+                alert('The emails entered do not match.')
+            };
+        };
+    </script>
+</body>
+</html>
