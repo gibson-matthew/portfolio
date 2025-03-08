@@ -3,90 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Texas</title>
-
-    <link rel="stylesheet" href="landing-page.css">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="wrapper">
-        <!-- Header -->
-        <header class="tx-header">
-            <!-- Logo and Title -->
-            <div class="head-item1">
-                <div class="head-left">
-                    <a href="index.html">
-                        <img src="pictures/texas-logo.png" class="head-logo" alt="Texas state outline with the Texas flag inlayed.">
-                    </a>
-                    <h1>Texas</h1>
+    <div class="container-fluid text-center text-black px-4 py-2">
+        <div class="row">
+            <div class="col-sm-4 py-2 border-bottom border-dark">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-start align-items-center flex-md-column">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCo5rBr2N6uQKaltnIgwzmdJxCBRhodVB-sQ&s" alt="Photo of Matthew Gibson" class="img-fluid rounded-circle w-25">
+                            <h3 class="text-center ps-2">Matthew Gibson</h3>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <p>As a software engineer, I spend my days crafting the digital tools we use. I write the code that brings ideas to life,
+                                meticulously testing and debugging to ensure everything works smoothly. My goal is to use my skills to solve complex 
+                                problems, building robust and efficient software that makes a real difference.
+                            </p>        
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <nav class="d-flex flex-row flex-md-column justify-content-center-align-items-center">   
+                            <ul class="list-group list-group-horizontal d-md-none">
+                                <li class="list-group-item">About</li>
+                                <li class="list-group-item">Projects</li>
+                                <li class="list-group-item">Request Services</li>
+                            </ul>
+                    
+                            <ul class="list-group d-none d-md-flex">
+                                <li class="list-group-item">About</li>
+                                <li class="list-group-item">Projects</li>
+                                <li class="list-group-item">Request Services</li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            <!-- Navigation Bar -->
-            <div class="head-item2">
-                <nav class="tx-nav">
-                    <ol class="nav-item">
-                        <li class="bttn">
-                            <a href="austin.html" class="no-decoration">Austin</a>
-                        </li>
-                        <li class="bttn">
-                            <a href="fortworth.html" class="no-decoration">Fort Worth</a>
-                        </li>
-                        <li class="bttn">
-                            <a href="dallas.html" class="no-decoration">Dallas</a>
-                        </li>
-                    </ol>
-                </nav>
+            <div class="col-sm-8">
+                <div class="row"> 
+                </div>
             </div>
-        </header>
-
-        <main class="main">
-            <div class="main-item-left">
-                <img src="https://texascooppower.com/wp-content/uploads/2021/11/detail_bluebonnet-main.jpg" id="bluebonnet" alt="Texas Bluebonnet">
-                <p id="absolute">Bluebonnets are the offical Texas state flower!</p>
-                <p id="relative">Learn more <a href="https://gov.texas.gov/first-lady/post/the_bluebonnet_the_state_flower_of_texas" target="_blank">HERE.</a></p>
-            </div>
-            <form action="*" class="main-item-right">
-                <div class="form-item">
-                    <label for="fname">First name: </label><br>
-                    <input type="text" name="fname" id="fname" placeholder="First Name">
-                </div>
-                <div class="form-item">
-                    <label for="lname">Last name: </label><br>
-                    <input type="text" name="lname" id="lname" placeholder="Last Name">
-                </div>
-                <div class="form-item">
-                    <label for="email">Email: </label><br>
-                    <input type="text" name="email" id="email" placeholder="Email" onchange="emailVerify()">
-                </div>
-                <div class="form-item">
-                    <label for="email">Confirm Email: </label><br>
-                    <input type="text" name="email2" id="email2" placeholder="Email2" onchange="emailVerify()">
-                </div>
-                <div class="form-item">
-                    <label for="message">Leave a message:</label><br>
-                    <textarea name="message" id="message" placeholder="Message"></textarea>
-                </div>
-                <button>
-                    Submit
-                </button>
-            </form>
-        </main>
+        </div>
     </div>
 
-    <script>
-        function emailVerify() {
-            var e1 = document.getElementById('email').value;
-            var e2 = document.getElementById('email2').value;
-            var blank = '';
-
-            // Confirm the emails match
-            if (e1 == blank && e2 == blank) {
-                //
-            } else if (e1 == e2) {
-                //
-            } else {
-                alert('The emails entered do not match.')
-            };
-        };
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
